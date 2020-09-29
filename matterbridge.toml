@@ -1,0 +1,28 @@
+[general]
+IconURL="https://robohash.org/{NICK}.png?set=set4"
+EditSuffix=" (edited)"
+EditDisable=true
+
+[irc.ocaml]
+Server="irc.freenode.net:7000"
+Nick="d_bot"
+RemoteNickFormat="<{NICK}> "
+UseTLS=true
+Password="ocaml"
+
+[[gateway]]
+name="gateway1"
+enable=true
+
+[[gateway.inout]]
+account="discord.ocaml"
+#channel="irc"
+channel="general"
+
+[[gateway.inout]]
+account="irc.ocaml"
+channel="#ocaml"
+
+[discord.ocaml]
+Server="436568060288172042"
+RemoteNickFormat="{NICK} "
